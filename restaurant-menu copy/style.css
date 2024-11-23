@@ -1,0 +1,51 @@
+.card-titlee{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+body{
+    background-color: powderblue;
+
+}
+.navbarlogo{
+    height: 40px;
+    width: 40px;
+
+}
+.buttonscont{
+    margin-bottom: 20px;
+}
+.topbtn{
+    margin: 5px;
+}
+#headerimg{   
+     width: 50%;
+     border-radius: 15px;
+}
+.xtrapadding{
+    padding: 20px;
+}
+.rounded2{
+    border-radius: 25px;
+} 
+.bold{
+    font-weight: 600;
+}
+.semibold{
+    font-weight: 400;
+}
+#titleBG{
+    background-image: url(https://cdn.pixabay.com/photo/2016/10/25/18/16/cosamui-restaurant-09-1769616_1280.jpg);
+}
+.bgblur{
+backdrop-filter:blur(20px) sepia(1%) ;
+}
+.textWhite{
+    color: white;
+}
+.mainTitleBig{
+height: 650px;
+}
+.sepia{
+    backdrop-filter: sepia(90%);
+}
+

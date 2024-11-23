@@ -1,0 +1,41 @@
+#maindiv{
+    background-color: gray;
+    width: 80%;
+    border-radius:25px ;
+    align-self:center ;
+    justify-self: center;
+    margin-left: 0%;
+    box-shadow: rgba(0, 0, 0, 0.75) 10px 10px 20px 0px;
+}
+body{
+    background-color: rgb(44, 143, 235);
+    color: white;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+    font-size: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    border: 0;
+    border-radius: 25px;
+    height: 10rem;
+    width:90%;
+    font-size: 70px;
+    background-color: blue;
+    color: white;
+    margin-bottom: 20px;
+}
+.yes{
+    background-color: darkgreen;
+}
+.no{
+    background-color: darkred;
+}
+@media (max-width:700px) {
+    body{
+        font-size: 3rem;
+    }
+    
+}
