@@ -4,7 +4,8 @@
 }
 body{
     background-color: rgb(239, 195, 0);
-
+    color: white;
+    margin: 0%;
 }
 .navbarlogo{
     height: 40px;
@@ -18,9 +19,25 @@ body{
     margin: 5px;
 }
 #headerimg{
-     width: 70%;
-     border-radius: 21px;
+    background-image: url(./assets/IMG_3115.JPG);
+    height: 300px;
+    margin: 2%;
+    border-radius: 21px;
+    background-size: cover;
 }
 .xtrapadding{
     padding: 20px;
 }
+.cont{
+    backdrop-filter: blur(10px);
+    margin: 2%;
+    text-align: center;
+    border-radius: 25px; 
+}
+#horarioscont{
+    background-image: url(./assets/Capture-2024-11-24-153002.png);
+    background-position: center center;
+    background-size: cover;
+    height:30vh;
+}
+
