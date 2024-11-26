@@ -1,0 +1,30 @@
+html{background-color: antiquewhite;}
+*{
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+  }
+  h1{
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+.center{text-align: center;}
+h2{
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+.dp{
+height: 200px;
+text-align: center;
+}
+img{
+  border: 5px solid ;
+  border-radius: 5%;
+}
