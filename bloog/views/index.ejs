@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bloog</title>
+</head>
+<body>
+    <div>
+    <h1>welcome to bloog</h1>
+    <p>a website where you can read interesting stories 😁</p>  
+    </div>
+    <%
+        var posts = locals.posts %>
+    <% for( let i = 0; i < posts.length; i++ ) { %>
+    <div>
+        <%= posts[i].title %>
+        <%= posts[i].text %>
+    </div>
+    <% } %>
+
+</body>
+</html>
