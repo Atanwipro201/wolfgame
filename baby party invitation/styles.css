@@ -1,0 +1,20 @@
+body{
+    background-color: #C4E1F6;
+}
+h1{
+    color: #FF9D3D;
+}
+div{
+    background-color: #FEEE91;
+    border-radius: 25px;
+    color:#FFBD73;
+    margin-left: 10%;
+    margin-right: 10%;
+    text-align: center;
+}
+h3{
+    color: #FF9D3D;
+}
+img{
+    max-width:90%;
+}

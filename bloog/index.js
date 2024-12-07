@@ -13,9 +13,7 @@ var data = {
 app.use(express.static("public"))
 app.use(express.urlencoded({ extended: true }));
 
-app.listen(port,()=>{
-    console.log('listening on port : ' + port)
-})
+
 
 app.get("/create",(req,res)=>{
     res.sendFile("/html/index.html")
@@ -34,7 +32,9 @@ function Post(title,text, image){
     this.text = text;
     this.image = image;
 }
-
+app.listen(port,()=>{
+    console.log('listening on port : ' + port)
+})
 
 //post1
 //push("Post"+(posts.length+1))

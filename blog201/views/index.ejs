@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog201</title>
+</head>
+<body>
+
+    <h1>have a look to our blogs</h1>
+
+    <%var posts = locals.posts;var title = locals.title;var text = locals.text;console.log("page rendered");
+     for( let index = 0; index < posts.length; index++ ) { %>
+        <h2> <%= title[index] %> </h2>
+        <p><%= text[index] %></p>
+    <% } %>
+</body>
+</html>
