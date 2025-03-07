@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>playerview</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <p>a ti te toca</p>
-    <%= pR %>
-    <p>(fase de prueba experimental)elige persona:</p>
+    <h2><%= pN %> eres:</h2>
+    <h2><%= pR %></h2>
+    <p>elige persona:</p>
+    <p>tienen que decir quien son</p>
+    <form action="/submit" method="POST">
+        <input type="text" name="msg" placeholder="mandale un mensaje al narrador">
+        <input type="submit" value="OK">
+      </form>
 </body>
 </html>

@@ -1,0 +1,39 @@
+lobo: Mata 1 persona cada noche
+bruja: Mata & Revive 1 vez en toda la partida por la noche
+Vidente:Sabe si es lobo o no 
+Cazador:Mata a alguien si alguien él mismo muere
+Cupido:Enlaza a 2 personas(al principio)si muere una la otra tambien
+Ladrón:cambia su carta por la de otra persona(por la noche)
+Cuervo:el cuervo elige un lobo y si ese lobo es descubierto por la vidente o matado por la bruja ,el cuervo se convertirá en lobo y el lobo que se convertira.
+Fuego:Si la vidente o el arbol escojen esa carta por esa carta el fuego mata a la persona que había elegido anteriormente.
+Árbol:Elige a alguien por la noche para que no pueda ser hechado por votacion(solo se usa una vez)
+Hipnos:en la primera noche elige a una persona que tiene que proteger a Hipnos
+repetidor: en una votacion recibe dos votos y medio
+rockero:anule el efecto de una persona por la noche.
+tonto:solo puede votar al alcalde y tiene 2 votos(puede elgir si votar o no)
+alcalde:tiene 2 votos , si hechas a laguen que no es aldeano le das la carta a la persona a la izquierda
+///NOTAS:
+-si la vidente o la bruja escoje a un lobo,el cuervo le cambia la carta , si es la vidente en el turno del lobo le da la carta al cuervo y recibe su carta
+-si un lobo recibe  la carta de cuervo sigue en el mismo equipo pero no puede matar y tampoco se podrá usar la carta de cuervo otra vez
+-Despues de que el ladrórn y el rockero se despierten, todas las personas miran su carta, DISCLAIMER:el ladrón no podrá ver su carta hasta ese momento
+-*si la bruja muere, puede revivirse y matar a alguien esa misma noche
+-*si el tonto es alcalde los votos se anulan
+-el Árbol puede eleguir ua persona cada noche pero solo se activara el poder cuando la persona a la que iba a proteger es votada
+>los lobos y el cuervo solo ganan si son los unicos vivos
+>el pueblo solo gana si no hay lobos.si hay un cuervo este pierde automaticamente
+>los enamorados ganan si ambos están vivos
+///ROLES ALTERNATIVOS:
+Alquimista: 1 vez le da una poción a la vidente para que connozca el rol exacto de 2 personas(en vez de fuego)
+Ninja:2 veces ciega a los lobos y matan eligiendo un nº al azar(en vez del árbol)
+El hoesto:No puede mentir al menos que sea alcalde
+Nomada:1 vez, se va de la aldea y ninguna habilidad le afecta, pero no participara en le votación
+El niño: elige a su padre, no puede acusarlo/votarlo y su muere el padre el niño tiene 3x votos
+Zombi si muere sigue teniendo derecho a voto en la mañana siguente
+Medico:puede revivir a alguien 1 vez
+encantador:elige a una persona que tiene que votar lo mismo que el encantador (1 vez)
+mago:puede usar 2 pociones de revivir o 2 pociones de muerte
+adivino:en la primera noche elige a una persona y si es hombre lobo gana
+anti-bruja:hace lo mismo que una bruja pero esta en el equipo de los hombres lobo
+espía:elige a una persona, si algo le afecta a esa persona el espia será notificado
+asesino:puede asesinar a una persona 1 vez y si es inocente(no es del grupo de los hombres lobo pierde derecho a voto)
+noctambulo:levanta la mano y se duerme la persona despirta y él realiza un rol

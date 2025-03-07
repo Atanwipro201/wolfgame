@@ -15,10 +15,15 @@ app.get("/",(req,res)=>{
         posts:posts,title:title,text:text
     });
 })
-
+app.post("/submito", (req, res) => {
+    randomwords();
+    res.render("index.ejs",{
+        posts:posts,title:title,text:text
+    })
+  });
 app.get("/create",(req,res)=>{
-    res.render("index",{
-        posts : posts,
+    res.render("create.ejs",{
+        posts:posts
     });
 });
 

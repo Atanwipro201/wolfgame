@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto&display=swap');
+
+body{
+    margin:0;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    background-image: url(https://cdn.pixabay.com/photo/2022/10/09/02/16/haunted-house-7508035_1280.jpg);
+
+}
+.bold {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  backdrop-filter: blur(10px);
+}
+p{
+    backdrop-filter: blur(10px);
+    text-shadow: 10%;
+    color: aliceblue;
+}
+
+#p1{
+    background-color: lightblue;
+    width: 40%;
+    margin-left: 30%;
+    border-radius: 21px;
+}
+#p2{
+    background-color: lightcoral;
+    width: 40%;
+    margin-left: 30%;
+    border-radius: 21px;
+}
+#p3{
+    background-color: lightgoldenrodyellow;
+    width: 40%;
+    margin-left: 30%;
+    border-radius: 21px;
+}
+#p4{
+    background-color: lightsalmon;
+    width: 40%;
+    margin-left: 30%;
+    border-radius: 21px;
+}
+#p5{
+    background-color: lightseagreen;
+    width: 40%;
+    margin-left: 30%;
+    border-radius: 21px;
+}
+#p6{
+    background-color: rgb(224, 173, 230);
+    width: 40%;
+    margin-left: 30%;
+    border-radius: 21px;
+}
+#p7{
+    background-color: rgb(230, 173, 175);
+    width: 40%;
+    margin-left: 30%;
+    border-radius: 21px;
+}
+#p8{
+    background-color: lightskyblue;
+    width: 40%;
+    margin-left: 30%;
+    border-radius: 21px;
+}
+  

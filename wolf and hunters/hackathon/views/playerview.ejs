@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>playerview</title>
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2><%= pN %> eres:</h2>
+    <h2><%= pR %></h2>
+    <p>elige persona:</p>
+    <p>tienen que decir quien son</p>
+    <form action="/submit" method="POST">
+        <input type="text" name="msg" placeholder="mandale un mensaje al narrador">
+        <input type="submit" value="OK">
+      </form>
+      <%for (let index = 0; index < msg.length; index++) {
+        const element = msg[index];%>
+        <p>message: <%= element%></p>
+    <%}%>
+</body>
+</html>

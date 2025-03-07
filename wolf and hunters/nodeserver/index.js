@@ -1,84 +1,121 @@
 import express from "express";
-const app = express()
-const players = ["p1","p2","p3","p4","p5","p6","p7","p8","p9"];
+import { dirname } from "path";
+import { fileURLToPath } from "url";
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const app = express();
+const players = ["aryan","Natty","alfonso","ángel","alice","cristina","pablo","jorge","samuel"];
 const roles =["campesino","lobo","cupido","vidente","bruja","cazador","alcalde","niña","rufian"];
-var rolesDone =[];
-var playerRoles = [];
+
+var msg = [];
+var name =[];
+
 const port = 3000;
-getRoles();
-app.get("/",(req,res)=>{
+app.use(express.urlencoded({ extended: true }));
+
+
+shuffleArray(roles);
+app.get("/newgame",(req,res)=>{
     newgame();
     res.render("mainpage.ejs",{
-        playerRoles:playerRoles
+        players:players,
+        roles:roles,
+        msg:msg,
+        name:name
+    });
+});
+app.get("/normal",(req,res)=>{
+    res.render("mainpage.ejs",{
+        players:players,
+        roles:roles,
+        msg:msg,
+        name:name
+    });
+});
+app.get("/",(req,res)=>{
+    res.render("mainpage.ejs",{
+        players:players,
+        roles:roles,
+        msg:msg,
+        name:name
+    });
+});
+app.get("/aryan",(req,res)=>{
+    res.render("playerview.ejs",{
+        pR:roles[0],
+        pN:players[0]
+    });
+});
+app.get("/natty",(req,res)=>{
+    res.render("playerview.ejs",{
+        pR:roles[1],
+        pN:players[1]
+    });
+});
+app.get("/alfonso",(req,res)=>{
+    res.render("playerview.ejs",{
+        pR:roles[2],
+        pN:players[2]
+    });
+});
+app.get("/angel",(req,res)=>{
+    res.render("playerview.ejs",{
+        pR:roles[3],
+        pN:players[3]
+    });
+});
+app.get("/alice",(req,res)=>{
+    res.render("playerview.ejs",{
+        pR:roles[4],
+        pN:players[4]
     })
 })
-app.get("/1",(req,res)=>{
+app.get("/cristina",(req,res)=>{
     res.render("playerview.ejs",{
-        pR:playerRoles[0]
+        pR:roles[5],
+        pN:players[5]
     })
 })
-app.get("/2",(req,res)=>{
+app.get("/pablo",(req,res)=>{
     res.render("playerview.ejs",{
-        pR:playerRoles[1]
+        pR:roles[6],
+        pN:players[6]
     })
 })
-app.get("/3",(req,res)=>{
+app.get("/jorge",(req,res)=>{
     res.render("playerview.ejs",{
-        pR:playerRoles[2]
+        pR:roles[7],
+        pN:players[7]
     })
 })
-app.get("/4",(req,res)=>{
+
+app.get("/samuel",(req,res)=>{
     res.render("playerview.ejs",{
-        pR:playerRoles[3]
+        pR:roles[8],
+        pN:players[8]
     })
 })
-app.get("/5",(req,res)=>{
-    res.render("playerview.ejs",{
-        pR:playerRoles[4]
-    })
-})
-app.get("/6",(req,res)=>{
-    res.render("playerview.ejs",{
-        pR:playerRoles[5]
-    })
+app.post("/submit",(req,res)=>{
+    var msg2 = req.body.msg
+    console.log(req.body)
+    console.log(msg2)
+    msg.push(msg2)
+    res.sendFile(__dirname+"/public/guide.html")
 })
 app.listen(port,()=>{
     console.log("your app is active on port: "+port)
 })
-///functions
-
-function checkRoll(element,rR){
-    var randomRole2 = roles[Math.floor(Math.random()*9)];
-    if (rolesDone.includes(rR)){
-        if(rolesDone.includes(randomRole2)){
-            checkRoll(element,rR);
-        }
-        else{
-            console.log(element+" = "+randomRole2);
-            rolesDone.push( randomRole2 );
-            playerRoles.push(element+": "+rR);
+    function shuffleArray(arr) {
+        for (let i = arr.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));  // Random index between 0 and i
+            [arr[i], arr[j]] = [arr[j], arr[i]];  // Swap elements at index i and j
         }
     }
-    else{
-        rolesDone.push( rR )
-        console.log(element+" = "+rR);
-        playerRoles.push(element+": "+rR)
-    }
-}
-function getRoles(){
-    for (let i = 0; i < players.length; i++) {
-        const element = players[i];
-        const randomRole = roles[Math.floor(Math.random()*8)]
-        console.log(element+"'s role is :'")
-        checkRoll(element,randomRole)
+    
 
-        
-    }
-}
 function newgame(){
-    rolesDone =[];
-    playerRoles =[];
-    getRoles();
+    msg =[];
+    shuffleArray(roles);
+    console.log("new game")
 }
 
 
